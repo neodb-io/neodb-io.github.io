@@ -1,0 +1,67 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+#post {
+
+}
+
+.default-layout .left {
+    width: 250px;
+    padding: 10px;
+    float: left;
+    margin-right: 20px;
+}
+
+.default-layout .left .up .title {
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.default-layout .left .up .sub-title {
+    font-size: 16px;
+    text-align: center;
+}
+
+.default-layout .left .down {
+    margin-top: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.default-layout .left .down a, 
+.default-layout .left .down a:active{
+    color: black;
+}
+
+.default-layout .right {
+    float: left;
+    padding-left: 30px;
+    border-left: 1px dashed #EEE;
+    width: 800px;
+}
+
+/* post lists */
+.posts {
+    margin: 10px 0;
+}
+
+.posts .item {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.posts .item a, .posts .item a:active {
+    color: black;
+}
+
+.posts .tag {
+    margin-right: 5px;;
+    font-style: italic;
+    padding: 1px;
+    line-height: 25px;
+    color: #666;
+}
