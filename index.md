@@ -5,7 +5,11 @@ title: NeoDB Database Platform Introduction
 
 # NeoDB Database Platform
 
-## WHY
+## 1. Vision
+We want to build an <b>all-in-one database platform</b> to help small or medium sized orginization managing their data and providing high quality services, with <b>minimal cost</b>.
+
+
+## 2. Background
 - Storage systems cost too much resources these years and most of the cost are just waste of money
 - Modern hardware development is <b>much faster</b> than storage algorithms & data structures, we want to re-design them
   - Barely see any KV system can use the full advantage of NVMe SSD's bandwidth
@@ -13,7 +17,7 @@ title: NeoDB Database Platform Introduction
 - User experience (e.g. WebUI) is ignored for decades, most users have to development their own management panal, that's not so good for non-technical companies or organizations.
 
 
-## 1. Introduction
+## 3. Introduction
 
 NeoDB is a <b>VERY LONG TERM</b> product and will be released module by module.
 
@@ -29,7 +33,7 @@ NeoDB includes three top layer components (<b>each component could be used indiv
   - <i>A set of core KV storage systems for different purposes</i>
   - <i>Including columar store and row store engines</i>
 
-## 2. Modular Design for Data Storage System
+## 4. Modular Design for Data Storage System
 Users can choose any module to fit their special cases, e.g. use a <i><b>NeoDB for NVMe SSD KV</b></i> to enable high density( > 60TB) & high performance & low cost single server storage.
 
 <b>Module List:</b>
@@ -46,14 +50,14 @@ Users can choose any module to fit their special cases, e.g. use a <i><b>NeoDB f
   - Fast recovery (thanks to Optane's great performance)
 - ...
 
-## 3. Architecture
+## 5. Architecture
 <img width="100%" src="/images/architecture.png"/>
 
-## 4. Milestones & Plan
+## 6. Milestones & Plan
 
 Current we are working on all storage modules:
 
-### 4.1. NeoDB for IoT
+### 6.1. NeoDB for IoT
 Ongoing
 
 <!-- - [ ] ...
@@ -66,11 +70,11 @@ Ongoing
 - [ ] Meta server first version without raft implementation
 - [x] Columar storage engine for time series data first version -->
 
-### 4.2. NeoDB for NVMe SSD KV
+### 6.2. NeoDB for NVMe SSD KV
 TODO
 
-### 4.3. NeoDB for Persistent Memory KV
+### 6.3. NeoDB for Persistent Memory KV
 TODO
 
-## 5. License
+## 7. License
 TODO
