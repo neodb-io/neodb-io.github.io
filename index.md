@@ -47,7 +47,7 @@ Users can choose any module to fit their special cases, e.g. use a <i><b>NeoDB f
 - ...
 
 ## 3. Architecture
-TODO
+<img width="100%" src="/images/architecture.png"/>
 
 ## 4. Milestones & Plan
 
