@@ -19,7 +19,9 @@ tags:
 ### 2. WHY
 - DRAM is relatively expensive than NVMe SSD (20~40 times)
 - Latest NVMe SSD can archieve 3.5GB/s sequential read per disk
-  - The paper didn't mention latency, but AFAIK, modern NVMe SSD (SLC) can archieve about 30us 4K read/write latency.
+  - The paper didn't mention latency, but AFAIK, modern NVMe SSD (SLC) can achieve about 30us 4K read/write latency.
+- NVMe SSD has much better capacity than before
+  - 100 TB per server is not unusual anymore
 
 ### 3. Main Ideas
 - Use a carefully designed <b>buffer manager</b> that combines low-overhead buffering with variable-size pages.
