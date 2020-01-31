@@ -40,10 +40,18 @@ tags:
 - If target page is on disk, then it will use 6 bits of the pointer to identify its <i>size class</i>.
 
 #### 4.3. Versioned Latches
-
+- Each active buffer frame contains a <b>versioned latch</b> which can either be acquired in <i>exclusive mode, shared mode, or optimistic mode</i>
+- a versioned latch is a single 64-bit integer, of which 5 bits are used to store state information, while the remaining 59 bits are used to store a version counter
 
 #### 4.4. Index & Data Store
+- Buffer manager uses B+ tree as its index and a 8 bytes identifier as B+ tree's key
+- The identifier is generated during insertion and will increase strictly monotonically
+  - <i>But I didn't see further detail about how identifiers are generated...</i>
 
 
-### 5. Conclusion
+### 5. Conclusion & Comments
 - This paper provides a concept of how to utilize the power of NVMe SSD
+- The main idea is a buffer manager but it didn't show more details about how the system works, especially how its index works.
+
+### 6. What We've Leared
+- Not very much, most of the ideas were already used in different products
